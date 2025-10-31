@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>총알 피하기 게임</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="game-panel" role="application" aria-label="총알 피하기 게임">
+      <div class="canvas-wrap">
+        <canvas id="game" width="900" height="600"></canvas>
+      </div>
+      <div class="info">
+        <div class="title">총알 피하기</div>
+        <div class="desc">
+          화살표 / WASD 또는 마우스/터치로 움직여서 총알을 피하세요.<br>
+          시간이 길수록 총알이 더 많아집니다.
+        </div>
+
+        <div class="stat"><span>점수</span><span id="score">0.00 s</span></div>
+        <div class="stat"><span>최고 점수</span><span id="best">0.00 s</span></div>
+        <div class="stat"><span>상태</span><span id="status">대기 중</span></div>
+
+        <div class="controls">
+          <div class="row">
+            <button id="start">시작</button>
+            <button id="restart" class="btn-ghost">재시작</button>
+          </div>
+          <div class="row">
+            <button id="toggle-sound" class="small btn-ghost">사운드: ON</button>
+            <button id="toggle-auto" class="small btn-ghost">자동 난이도: ON</button>
+          </div>
+          <div class="muted">조작: WASD / ←↑→↓ / 마우스 / 터치</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
